@@ -38,3 +38,6 @@ nnoremap <leader>j :m .+1<CR>==
 nnoremap <leader>k :m .-2<CR>==
 
 
+" Buffer mappings
+nnoremap <leader>bd :b#<bar>bd#<CR>
+nnoremap <leader>bi :Buffers<CR>

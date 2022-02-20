@@ -14,8 +14,5 @@ nnoremap <leader>sd :Ag<CR>
 " nnoremap <leader>sp :lcd %:p:h :Ag<CR>
 nnoremap <leader>sp :GGrep<CR>
 
-" Buffer mappings
-nnoremap <leader>bd :b#<bar>bd#<CR>
-nnoremap <leader>bi :Buffers<CR>
 
 
