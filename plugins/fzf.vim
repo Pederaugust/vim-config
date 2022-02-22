@@ -1,9 +1,10 @@
 let g:fzf_preview_window = []
 
 " File mappings
-command! -bang HomeFiles call fzf#vim#files('~/', <bang>0)
+command! -bang HomeFiles call fzf#vim#files('/', <bang>0)
 
-nnoremap <leader>. :HomeFiles<CR>
+
+nnoremap <leader>. :HomeFiles<CR>shellescape(expand('%:p'))
 nnoremap <leader><leader> :GFiles<CR>
 
 " Search mappings
