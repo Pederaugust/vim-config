@@ -51,3 +51,5 @@ inoremap { {}<left>
 nnoremap <leader>vc :e ~/.config/nvim/init.vim<cr>
 nnoremap <leader>vs :so ~/.config/nvim/init.vim<cr>
 
+" Close vim
+nnoremap <C-x><C-c> :q
