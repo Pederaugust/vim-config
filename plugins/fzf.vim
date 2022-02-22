@@ -5,6 +5,7 @@ command! -bang HomeFiles call fzf#vim#files('~/', <bang>0)
 
 
 nnoremap <leader>. :HomeFiles<CR>
+nnoremap <leader>, :Files<CR>
 nnoremap <leader><leader> :GFiles<CR>
 
 " Search mappings
