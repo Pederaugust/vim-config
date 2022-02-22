@@ -41,3 +41,13 @@ nnoremap <leader>k :m .-2<CR>==
 " Buffer mappings
 nnoremap <leader>bd :b#<bar>bd#<CR>
 nnoremap <leader>bi :Buffers<CR>
+
+" Parens mapping
+inoremap ( ()<left>
+inoremap [ []<left>
+inoremap { {}<left>
+
+" Update vimrc and load config
+nnoremap <leader>vc :e ~/.config/nvim/init.vim<cr>
+nnoremap <leader>vs :so ~/.config/nvim/init.vim<cr>
+
