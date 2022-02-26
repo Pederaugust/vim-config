@@ -24,25 +24,32 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'lifepillar/vim-gruvbox8'
 Plug 'tpope/vim-fugitive'
-Plug 'jceb/vim-orgmode'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'frazrepo/vim-rainbow'
 Plug 'morhetz/gruvbox'
 Plug 'nathanaelkane/vim-indent-guides'
+Plug 'jceb/vim-orgmode'
+
 
 call plug#end()
 
+packloadall
+silent! helptags ALL
+let g:org_heading_shade_leading_stars=1
+let g:org_indent=1
 " THEMING
 set laststatus=2
+
+let g:gruvbox_plugin_hi_groups = 1
 let g:gruvbox_transp_bg = 0
 let g:gruvbox_contrast_dark = 'soft'
 let g:gruvbox_bold = 0
 let g:gruvbox_italics = 0
-colorscheme gruvbox8_soft
 
 " Airline
 let g:airline_theme='gruvbox8'
 let g:airline_powerline_fonts = 1
+colorscheme gruvbox
 
 
 autocmd BufEnter * silent! lcd %:p:h
@@ -130,7 +137,7 @@ let g:rainbow_active = 1
 
 " PLUGINS/COC
 nnoremap <leader>gt :call CocActionAsync('jumpDefinition')<cr>
- 
+
 
 " PLUGINS/FUGITIVE
 " Git mappings
@@ -139,10 +146,4 @@ nnoremap <leader>gp :Git push<CR>
 
 " PLUGINS/INDENT
 let g:indent_guides_enable_on_vim_startup = 0
-
-" PLUGINS/ORG
-packloadall
-silent! helptags ALL
-
-
 
